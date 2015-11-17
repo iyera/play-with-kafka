@@ -11,7 +11,7 @@ case class Producer[A](topic: String) {
   val props = new Properties()
 
   // Specify brokers, along with the corresponding port
-  props.put("metadata.broker.list", "aiyer-playground-1.vpc.cloudera.com:9092")
+  props.put("metadata.broker.list", "aiyer-ibecoding-2.vpc.cloudera.com:9092")
 
   props.put("serializer.class", "kafka.serializer.StringEncoder")
   props.put("request.required.acks", "1")
